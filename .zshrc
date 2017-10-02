@@ -1,8 +1,6 @@
 # Exports {{{
 export GITHUB_USER="afernandez90"
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin # Reorder PATH so local bin is first
-export GREP_OPTIONS='--color=auto'
-export GREP_COLOR='1;32'
 export MANPAGER="less -X" # Don’t clear the screen after quitting a manual page
 export EDITOR="vim"
 export TERM="screen-256color"
@@ -41,6 +39,7 @@ alias tmuxsrc="tmux source-file ~/.tmux.conf"
 alias tmuxkillall="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}" # tmux kill all sessions
 alias ct="ctags -R --exclude=.git --exclude=node_modules"
 alias dotfiles="ls -a | grep '^\.' | grep --invert-match '\.DS_Store\|\.$'"
+alias grep="grep $GREP_OPTIONS"
 # }}}
 
 # Auto Completion {{{
