@@ -1,6 +1,6 @@
 # Exports {{{
 export GITHUB_USER="afernandez90"
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/improbable/tools/latest/linux # Reorder PATH so local bin is first
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/improbable/tools/latest/linux:/usr/local/go/bin # Reorder PATH so local bin is first
 export MANPAGER="less -X" # Don’t clear the screen after quitting a manual page
 export EDITOR="vim"
 export TERM="screen-256color"
